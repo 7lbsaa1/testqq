@@ -1,0 +1,10 @@
+.adm{display:grid;grid-template-columns:230px minmax(0,1fr);gap:20px;max-width:1280px;margin:20px auto;padding:0 16px}
+.adm nav{padding:16px;display:grid;gap:6px;align-content:start;position:sticky;top:20px;height:fit-content}
+.adm nav a,.adm nav button{padding:11px 14px;border-radius:12px;background:0;border:0;cursor:pointer;text-align:start}
+.adm nav .on,.adm nav a:hover{background:rgba(255,61,110,.15);color:var(--ac)}
+.stats4{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}
+.stat{padding:20px}.stat b{font-size:34px;display:block;background:var(--g);-webkit-background-clip:text;background-clip:text;color:transparent}
+.li{display:flex;gap:12px;align-items:center;padding:14px 16px;margin-top:12px;flex-wrap:wrap}.li .grow{flex:1;min-width:180px}
+.tag{font-size:12px;padding:2px 10px;border-radius:20px;background:rgba(255,61,110,.18);color:var(--ac)}
+.btn.sm{padding:7px 14px;font-size:14px}
+@media(max-width:800px){.adm{grid-template-columns:1fr}.adm nav{position:static;grid-template-columns:repeat(2,1fr)}}
